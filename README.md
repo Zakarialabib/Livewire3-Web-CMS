@@ -2,11 +2,29 @@
 
 CorporateWeb, a Laravel and livewire CMS, for content creator or businesses. Offering a user-friendly dashboard, and an array of features, it becomes your partner in efficient business management and growth.
 
-Features:
 
+## Features:
 
-Built with Laravel 10, Livewire 3, and Tailwind CSS, ensuring a super fast experiance, without bundling assest.
+Built with Laravel 10, Livewire 3, and Tailwind CSS, ensuring a super fast experiance, without bundling assets, while management of your content is super dynamic.
 
+could be used as portfolio or practacly any type of service. 
+
+    - Dark Mode
+    - Dynamic Pages
+    - Dynamic Menu 
+    - Dynamic Sections
+    - Multi Language
+    - Dynamic Contact
+
+## Screenshots : 
+
+| Home | Page Management |
+| --- | --- | --- |
+| ![Login](screens/home.png) | ![Dashboard](screens/page-management.png) |
+
+| Sections | Section Create | Section Edit |
+| --- | --- | --- |
+| ![Sections](screens/sections.png) | ![Section Create](screens/section-create.png) | ![Section Edit](screens/section-edit.png) |
 
 
 ## Login with the following credentials
