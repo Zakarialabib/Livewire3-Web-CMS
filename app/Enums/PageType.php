@@ -10,6 +10,7 @@ enum PageType: string
     case ABOUT = 'about';
     case BLOG = 'blog';
     case CONTACT = 'contact';
+    case SERVICE = 'service';
 
     public function label(): string
     {
@@ -18,6 +19,7 @@ enum PageType: string
             static::ABOUT   => __('About'),
             static::BLOG    => __('blog'),
             static::CONTACT => __('contact'),
+            static::SERVICE => __('service'),
         };
     }
 

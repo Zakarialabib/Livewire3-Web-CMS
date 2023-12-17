@@ -27,7 +27,7 @@ class SliderSeeder extends Seeder
                 'image'       => uploadImage('images/sliders', 1640, 1480),
                 'bg_color'    => 'bg-white',
                 'featured'    => 1,
-                'link'        => 'https://www.polyafrique.com',
+                'link'        => 'https://www.github.com/zakarialabib',
                 'language_id' => $language->id,
             ],
             [
@@ -37,7 +37,7 @@ class SliderSeeder extends Seeder
                 'image'       => uploadImage('images/sliders', 1640, 1480),
                 'bg_color'    => 'bg-white',
                 'featured'    => 0,
-                'link'        => 'https://www.polyafrique.com',
+                'link'        => 'https://www.github.com/zakarialabib',
                 'language_id' => $language->id,
             ],
             [
@@ -47,7 +47,7 @@ class SliderSeeder extends Seeder
                 'image'       => uploadImage('images/sliders', 1640, 1480),
                 'bg_color'    => 'bg-white',
                 'featured'    => 0,
-                'link'        => 'https://www.polyafrique.com',
+                'link'        => 'https://www.github.com/zakarialabib',
                 'language_id' => $language->id,
             ],
         ]);

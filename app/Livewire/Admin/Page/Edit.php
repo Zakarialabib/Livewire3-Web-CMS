@@ -46,6 +46,8 @@ class Edit extends Component
 
     public $type;
 
+    public $language_id;
+
     public $status;
 
     #[On('editorjs-save')]
@@ -64,6 +66,7 @@ class Edit extends Component
         $this->description = $this->page->description;
         $this->meta_title = $this->page->meta_title;
         $this->meta_description = $this->page->meta_description;
+        $this->language_id = $this->page->language_id;
 
         // is string or is array
         if (is_string($this->page->settings)) {
@@ -81,10 +84,10 @@ class Edit extends Component
 
         $this->page->slug = Str::slug($this->page->name);
 
-        if ( ! $this->image) {
+        if (!$this->image) {
             $this->image = null;
         } elseif (is_object($this->image) && method_exists($this->image, 'extension')) {
-            $imageName = Str::slug($this->page->name).'.'.$this->image->extension();
+            $imageName = Str::slug($this->page->name) . '.' . $this->image->extension();
             $this->image->storeAs('pages', $imageName, 'local_files');
             $this->page->image = $imageName;
         }

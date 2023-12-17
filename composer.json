@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "zakarialabib/corporateweb",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Livewire Corporate CMS or Portfolio.",
     "keywords": [
         "framework",
         "laravel"

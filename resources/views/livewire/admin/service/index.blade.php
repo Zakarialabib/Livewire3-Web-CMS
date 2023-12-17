@@ -117,7 +117,7 @@
                             <x-table.td>
                                 {{ $service->title }}
                             </x-table.td>
-                
+
                             <x-table.td>
                                 <livewire:utils.toggle-button :model="$service" field="status" lazy
                                     key="{{ $service->id }}" />
@@ -187,7 +187,7 @@
         </div>
     </x-card>
 
-    <livewire:admin.service.edit lazy service="{{ $service }}" wire:key="edit-service-{{ $service->id }}" />
+    <livewire:admin.service.edit service="{{ $service }}" lazy />
 
     <livewire:admin.service.create lazy />
 

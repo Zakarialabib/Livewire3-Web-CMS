@@ -13,19 +13,19 @@ class SettingSeeder extends Seeder
     protected $settings = [
         [
             'key'   => 'company_name',
-            'value' => 'Polyafrique',
+            'value' => 'CorporateWeb',
         ],
         [
             'key'   => 'site_title',
-            'value' => 'Polyafrique',
+            'value' => 'CorporateWeb',
         ],
         [
             'key'   => 'company_email_address',
-            'value' => 'C.laghmouchi@polyafrique.com',
+            'value' => 'zakarialabib@gmail.com',
         ],
         [
             'key'   => 'company_phone',
-            'value' => '+212661716483',
+            'value' => '+212638041919',
         ],
         [
             'key'   => 'company_address',
@@ -53,19 +53,19 @@ class SettingSeeder extends Seeder
         ],
         [
             'key'   => 'seo_meta_title',
-            'value' => 'Polyafrique',
+            'value' => 'CorporateWeb',
         ],
         [
             'key'   => 'seo_meta_description',
-            'value' => 'Polyafrique',
+            'value' => 'CorporateWeb',
         ],
         [
             'key'   => 'social_facebook',
-            'value' => '#',
+            'value' => 'https://www.facebook.com/zakaria.labiib/',
         ],
         [
             'key'   => 'social_twitter',
-            'value' => '#',
+            'value' => 'https://twitter.com/zakarialabib',
         ],
         [
             'key'   => 'social_tiktok',
@@ -77,7 +77,7 @@ class SettingSeeder extends Seeder
         ],
         [
             'key'   => 'social_linkedin',
-            'value' => '#',
+            'value' => 'https://www.linkedin.com/in/zakaria-labib/',
         ],
         [
             'key'   => 'social_whatsapp',
@@ -119,12 +119,12 @@ class SettingSeeder extends Seeder
         foreach ($this->settings as $index => $setting) {
             $result = Settings::create($setting);
 
-            if ( ! $result) {
+            if (!$result) {
                 $this->command->info("Insert failed at record $index.");
 
                 return;
             }
         }
-        $this->command->info('Inserted '.count($this->settings).' records');
+        $this->command->info('Inserted ' . count($this->settings) . ' records');
     }
 }

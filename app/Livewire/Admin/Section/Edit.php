@@ -94,7 +94,7 @@ class Edit extends Component
 
         $this->embeded_video = $this->section->embeded_video;
         $this->image = $this->section->image;
-        $this->type = $this->section->type;
+        $this->type = $this->section->type->value;
 
         $this->description = $this->section->description;
 
