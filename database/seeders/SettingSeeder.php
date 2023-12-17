@@ -119,12 +119,12 @@ class SettingSeeder extends Seeder
         foreach ($this->settings as $index => $setting) {
             $result = Settings::create($setting);
 
-            if (!$result) {
+            if ( ! $result) {
                 $this->command->info("Insert failed at record $index.");
 
                 return;
             }
         }
-        $this->command->info('Inserted ' . count($this->settings) . ' records');
+        $this->command->info('Inserted '.count($this->settings).' records');
     }
 }

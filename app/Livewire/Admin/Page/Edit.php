@@ -84,10 +84,10 @@ class Edit extends Component
 
         $this->page->slug = Str::slug($this->page->name);
 
-        if (!$this->image) {
+        if ( ! $this->image) {
             $this->image = null;
         } elseif (is_object($this->image) && method_exists($this->image, 'extension')) {
-            $imageName = Str::slug($this->page->name) . '.' . $this->image->extension();
+            $imageName = Str::slug($this->page->name).'.'.$this->image->extension();
             $this->image->storeAs('pages', $imageName, 'local_files');
             $this->page->image = $imageName;
         }
