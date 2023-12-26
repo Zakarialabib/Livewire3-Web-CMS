@@ -70,17 +70,10 @@
                         class="grid grid-cols-3 md:grid-cols-4 sm:grid-cols-2 bg-transpaent my-10 text-center gap-5 lg:px-5 d:mb-0 xl:mt-0">
                         @foreach ($this->services as $service)
                             <div
-                                class="flex flex-col px-4 rounded-lg border-1 border-green-800 shadow-md w-full bg-white dark:bg-dark-eval-3">
-                                <div class="w-full">
-                                    @if ($service?->image)
-                                        <img alt="{{ $service->title }}"
-                                            src="{{ asset('images/services/' . $service->image) }}"
-                                            class="w-full h-16 object-cover shadow-lg" lazy />
-                                    @endif
-                                </div>
+                                class="flex flex-col px-4 rounded-lg border-1 border-green-800 shadow-md w-full bg-white dark:bg-dark-eval-3">  
                                 <div
                                     class="py-4 px-2 w-full lg:max-w-lg first-letter:mt-2 text-base text-gray-800 dark:text-gray-100">
-                                    {!! $service->content !!}
+                                    {{ $service->title }}
                                 </div>
                             </div>
                         @endforeach
